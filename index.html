@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="旅行清單">
+<meta name="theme-color" content="#4B848A">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>旅行清單</title>
+<style>
+:root {
+  --gold:   #FBC359;
+  --green:  #73A642;
+  --teal:   #4B848A;
+  --teal2:  #3a6a70;
+  --dark:   #1a2a2a;
+  --card:   #ffffff;
+  --bg:     #f0f5f5;
+  --border: #d4e4e5;
+  --muted:  #7a9fa5;
+  --text:   #1a2a2a;
+  --green-tick: #73A642;
+  --green-bg:   #eef6e6;
+  --red:    #e05a5a;
+  --red-bg: #fdeaea;
+  --safe-top:    env(safe-area-inset-top,0px);
+  --safe-bottom: env(safe-area-inset-bottom,0px);
+  --safe-left:   env(safe-area-inset-left,0px);
+  --safe-right:  env(safe-area-inset-right,0px);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Helvetica Neue',sans-serif;
+  background:var(--bg);color:var(--text);
+  display:flex;flex-direction:column;
+  max-width:430px;margin:0 auto;
+  position:relative;
+}
+
+/* ── HEADER ── */
+.header{
+  background:var(--teal);
+  padding:calc(var(--safe-top) + 48px) 18px 14px;
+  color:#fff;flex-shrink:0;
+}
+.hrow{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.htitle{font-size:24px;font-weight:800;letter-spacing:-.5px}
+.hsub{font-size:11px;color:rgba(255,255,255,.6);margin-top:2px}
+.hright{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.badge{background:var(--gold);color:var(--dark);padding:5px 13px;border-radius:99px;font-size:14px;font-weight:800}
+.icon-btn{width:36px;height:36px;border-radius:10px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:18px;background:rgba(255,255,255,.18);color:#fff}
+
+/* progress */
+.prog-wrap{margin-top:12px}
+.prog-info{display:flex;justify-content:space-between;font-size:11px;color:rgba(255,255,255,.7);margin-bottom:6px}
+.prog-track{background:rgba(0,0,0,.25);border-radius:99px;height:6px;overflow:hidden}
+.prog-bar{height:100%;border-radius:99px;transition:width .5s ease,background .5s}
+
+/* tabs */
+.tabs{display:flex;gap:6px;padding:10px 14px;background:var(--teal2);flex-shrink:0}
+.tab{flex:1;padding:7px 0;border-radius:10px;border:none;font-size:12px;font-weight:600;cursor:pointer;background:rgba(0,0,0,.2);color:rgba(255,255,255,.6);transition:all .2s}
+.tab.active{background:#fff;color:var(--teal)}
+
+/* ── CONTENT ── */
+.content{flex:1;overflow-y:auto;padding:12px 13px 130px;-webkit-overflow-scrolling:touch}
+
+.cat-card{background:var(--card);border-radius:16px;margin-bottom:10px;overflow:hidden;box-shadow:0 1px 5px rgba(0,0,0,.07)}
+.cat-hdr{display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer;border:none;background:transparent;width:100%;text-align:left;border-left:4px solid transparent;transition:background .15s}
+.cat-hdr.done{background:var(--green-bg)}
+.cat-emoji{font-size:22px;flex-shrink:0}
+.cat-info{flex:1;min-width:0}
+.cat-name{font-size:15px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cat-sub{font-size:11px;color:var(--muted);margin-top:1px}
+.cat-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.chip-done{background:var(--green-bg);color:var(--green);font-size:10px;font-weight:700;padding:3px 8px;border-radius:99px;white-space:nowrap}
+.edit-btn{width:28px;height:28px;border-radius:8px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:14px;background:#e8f4f5;color:var(--teal)}
+.chevron{color:var(--muted);font-size:11px;transition:transform .2s}
+.chevron.open{transform:rotate(180deg)}
+
+/* items */
+.item-list{border-top:1px solid var(--border)}
+.item-row{display:flex;align-items:center;gap:10px;padding:11px 14px;border:none;cursor:pointer;background:transparent;width:100%;text-align:left;border-bottom:1px solid #f4f9f9;transition:background .15s}
+.item-row.checked{background:var(--green-bg)}
+.chkbox{width:22px;height:22px;border-radius:6px;border:2px solid var(--border);background:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s}
+.chkbox.checked{background:var(--green);border-color:var(--green)}
+.chktick{color:#fff;font-size:13px;font-weight:800}
+.item-name{flex:1;font-size:14px;color:var(--text);transition:all .2s;text-align:left}
+.item-name.checked{color:var(--green);text-decoration:line-through;font-weight:600}
+.dot-green{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0}
+.del-item-btn{width:26px;height:26px;border-radius:7px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:var(--red-bg);color:var(--red);flex-shrink:0}
+
+/* add item */
+.add-item-row{display:flex;gap:6px;padding:8px 10px 10px;background:#fafcfc;border-top:1px solid var(--border)}
+.add-item-input{flex:1;padding:8px 10px;border-radius:10px;border:1.5px solid var(--border);font-size:13px;font-family:inherit;background:#fff;color:var(--text);outline:none}
+.add-item-input:focus{border-color:var(--teal)}
+.btn-add-item{padding:8px 12px;border-radius:10px;border:none;font-size:13px;font-weight:700;cursor:pointer;background:var(--teal);color:#fff}
+.btn-del-cat{padding:8px 10px;border-radius:10px;border:none;font-size:14px;cursor:pointer;background:var(--red-bg);color:var(--red)}
+
+/* ── BOTTOM NAV BAR ── */
+.bottom-bar{
+  position:fixed;
+  bottom:0; left:50%;
+  transform:translateX(-50%);
+  width:min(430px,100vw);
+  background:#fff;
+  border-top:1px solid var(--border);
+  padding:10px 16px calc(var(--safe-bottom) + 10px);
+  display:flex; gap:10px;
+  z-index:200;
+  box-shadow:0 -2px 16px rgba(0,0,0,.08);
+}
+.fab{
+  flex:1; padding:13px 10px;
+  border-radius:14px; border:none;
+  background:var(--teal); color:#fff;
+  font-size:14px; font-weight:700;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center; gap:6px;
+  box-shadow:0 3px 12px rgba(75,132,138,.3);
+}
+.fab.sm{
+  flex:0 0 52px;
+  font-size:20px;
+  background:var(--bg);
+  color:var(--teal);
+  box-shadow:none;
+  border:1.5px solid var(--border);
+}
+
+/* ── MODALS ── */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:300;display:flex;align-items:flex-end;backdrop-filter:blur(4px)}
+.overlay.hidden{display:none}
+.sheet{background:var(--card);border-radius:22px 22px 0 0;width:100%;padding:26px 20px calc(var(--safe-bottom)+32px);animation:up .25s ease;max-height:92vh;overflow-y:auto}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet h3{font-size:18px;font-weight:800;margin-bottom:6px;color:var(--text);padding:0 2px}
+.sheet p{font-size:13px;color:var(--muted);margin-bottom:18px;padding:0 2px;line-height:1.5}
+
+/* category modal */
+.emoji-grid{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.emj-btn{font-size:22px;width:40px;height:40px;border-radius:10px;border:2px solid transparent;background:var(--bg);cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+.emj-btn.sel{border-color:var(--teal);background:#e8f4f5}
+.color-grid{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.col-btn{width:28px;height:28px;border-radius:50%;border:3px solid transparent;cursor:pointer;transition:transform .15s}
+.col-btn.sel{border-color:var(--dark);transform:scale(1.2)}
+.field{width:100%;padding:13px 14px;border-radius:12px;border:1.5px solid var(--border);font-size:14px;font-family:inherit;color:var(--text);margin-bottom:12px;outline:none;background:#fff}
+.field:focus{border-color:var(--teal)}
+.field-label{font-size:12px;font-weight:700;color:var(--teal2);margin-bottom:7px;display:block;text-transform:uppercase;letter-spacing:.04em}
+.btn-row{display:flex;gap:8px;margin-top:6px}
+.btn-main{flex:1;padding:14px;border-radius:12px;border:none;background:var(--teal);color:#fff;font-size:14px;font-weight:700;cursor:pointer}
+.btn-cancel{padding:14px 16px;border-radius:12px;border:none;background:var(--bg);color:var(--muted);font-size:14px;font-weight:600;cursor:pointer}
+.btn-danger{padding:14px 16px;border-radius:12px;border:none;background:var(--red-bg);color:var(--red);font-size:14px;font-weight:700;cursor:pointer}
+
+/* io modal */
+.io-btn{width:100%;padding:14px;border-radius:13px;border:none;font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.io-btn.export{background:var(--teal);color:#fff}
+.io-btn.import{background:var(--green);color:#fff}
+.io-btn.cancel{background:var(--bg);color:var(--muted);font-weight:600}
+
+/* confirm dialog */
+.confirm-box{background:var(--card);border-radius:20px;width:calc(100% - 48px);max-width:340px;padding:24px 20px 18px;animation:pop .2s ease;text-align:center}
+.overlay.center{align-items:center;justify-content:center}
+@keyframes pop{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+.confirm-box h4{font-size:16px;font-weight:800;margin-bottom:8px;color:var(--text)}
+.confirm-box p{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.5}
+.confirm-btns{display:flex;gap:8px}
+.confirm-btns button{flex:1;padding:13px;border-radius:12px;border:none;font-size:14px;font-weight:700;cursor:pointer}
+.cb-cancel{background:var(--bg);color:var(--muted)}
+.cb-ok{background:var(--teal);color:#fff}
+.cb-danger{background:var(--red);color:#fff}
+
+/* settings */
+.setting-section{
+  margin-bottom:24px;
+  background:var(--bg);
+  border-radius:16px;
+  padding:16px;
+}
+.setting-section h4{
+  font-size:12px;font-weight:700;color:var(--teal);
+  text-transform:uppercase;letter-spacing:.07em;
+  margin-bottom:14px;
+}
+.setting-row{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:13px 0;border-bottom:1px solid var(--border);
+  gap:12px;
+}
+.setting-row:last-child{border-bottom:none;padding-bottom:0}
+.setting-row label{font-size:15px;font-weight:600;color:var(--text)}
+.setting-row span{font-size:12px;color:var(--muted);display:block;margin-top:3px;line-height:1.4}
+.toggle{width:44px;height:26px;border-radius:13px;border:none;cursor:pointer;position:relative;flex-shrink:0;transition:background .2s}
+.toggle.on{background:var(--teal)}
+.toggle.off{background:#ccc}
+.toggle::after{content:'';position:absolute;top:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .2s;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.toggle.on::after{left:21px}
+.toggle.off::after{left:3px}
+.drive-status{font-size:12px;padding:4px 10px;border-radius:99px;font-weight:600}
+.ds-ok{background:var(--green-bg);color:var(--green)}
+.ds-err{background:var(--red-bg);color:var(--red)}
+.ds-warn{background:#fff8e1;color:#b45309}
+.ds-off{background:var(--bg);color:var(--muted)}
+.btn-test{padding:8px 14px;border-radius:10px;border:none;font-size:12px;font-weight:700;cursor:pointer;background:var(--bg);color:var(--teal)}
+.gdrive-btns{display:flex;gap:8px;margin-top:10px}
+.gdrive-btn{flex:1;padding:11px;border-radius:11px;border:none;font-size:13px;font-weight:700;cursor:pointer}
+.gdb-up{background:var(--teal);color:#fff}
+.gdb-down{background:var(--green);color:#fff}
+.gdb-dis{background:var(--bg);color:var(--muted);cursor:not-allowed}
+.pending-badge{background:var(--gold);color:var(--dark);font-size:10px;font-weight:800;padding:2px 7px;border-radius:99px}
+
+/* install banner */
+.install-banner{background:linear-gradient(135deg,var(--teal),var(--teal2));color:#fff;padding:13px 15px;margin:10px 13px 0;border-radius:14px;display:flex;align-items:center;gap:10px}
+.install-banner.hidden{display:none}
+.ib-text{flex:1}
+.ib-text strong{font-size:13px;display:block}
+.ib-text span{font-size:11px;color:rgba(255,255,255,.7)}
+.ib-btn{background:var(--gold);color:var(--dark);border:none;padding:8px 14px;border-radius:10px;font-size:12px;font-weight:800;cursor:pointer;flex-shrink:0}
+.ib-close{background:none;border:none;color:rgba(255,255,255,.6);font-size:18px;cursor:pointer;flex-shrink:0}
+
+/* toast */
+.toast{position:fixed;bottom:calc(var(--safe-bottom)+115px);left:50%;transform:translateX(-50%);background:var(--dark);color:#fff;padding:10px 20px;border-radius:99px;font-size:13px;font-weight:600;z-index:600;opacity:0;transition:opacity .3s;white-space:nowrap;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+
+/* sync indicator */
+.sync-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px}
+.sd-ok{background:#73A642}
+.sd-pending{background:#FBC359;animation:pulse 1s infinite}
+.sd-err{background:#e05a5a}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+.hidden{display:none!important}
+.empty{text-align:center;color:var(--muted);padding:40px 20px;font-size:15px}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="hrow">
+    <div>
+      <div class="htitle">✈️ 旅行清單</div>
+      <div class="hsub">Travel Packing List</div>
+    </div>
+    <div class="hright">
+      <div class="badge" id="badgeCount">0/0</div>
+      <button class="icon-btn" onclick="openIO()" title="匯入匯出">⇅</button>
+      <button class="icon-btn" onclick="openSettings()" title="設定">⚙️</button>
+    </div>
+  </div>
+  <div class="prog-wrap">
+    <div class="prog-info">
+      <span id="progLabel">已備妥 0%</span>
+      <span id="progReady"></span>
+    </div>
+    <div class="prog-track"><div class="prog-bar" id="progBar" style="width:0%"></div></div>
+  </div>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="setTab('all',this)">全部</button>
+  <button class="tab" onclick="setTab('unpacked',this)">未帶</button>
+  <button class="tab" onclick="setTab('packed',this)">已帶 ✓</button>
+</div>
+
+<!-- INSTALL BANNER -->
+<div class="install-banner hidden" id="installBanner">
+  <div style="font-size:26px">📲</div>
+  <div class="ib-text" id="ibText">
+    <strong>安裝到主畫面</strong>
+    <span>離線也能使用</span>
+  </div>
+  <button class="ib-btn hidden" id="ibBtn">安裝</button>
+  <button class="ib-close" onclick="document.getElementById('installBanner').classList.add('hidden')">✕</button>
+</div>
+
+<!-- CONTENT -->
+<div class="content" id="content"></div>
+
+<!-- BOTTOM NAV BAR -->
+<div class="bottom-bar">
+  <button class="fab" onclick="openAddCat()">＋ 新增欄目</button>
+  <button class="fab sm" onclick="confirmResetAll()" title="重置勾選">↺</button>
+</div>
+
+<!-- ══ MODALS ══════════════════════════════════ -->
+
+<!-- Category Add/Edit -->
+<div class="overlay hidden" id="catOverlay" onclick="closeSheetOnBg(event,'catOverlay')">
+  <div class="sheet">
+    <h3 id="catModalTitle">新增欄目</h3>
+    <p>選擇圖示、顏色及輸入名稱</p>
+    <div class="emoji-grid" id="emojiGrid"></div>
+    <span class="field-label">欄目名稱</span>
+    <input class="field" id="catNameInput" placeholder="例：衣物" maxlength="20" onkeydown="if(event.key==='Enter')saveCat()">
+    <span class="field-label">邊框顏色</span>
+    <div class="color-grid" id="colorGrid"></div>
+    <div class="btn-row">
+      <button class="btn-cancel" onclick="hideOverlay('catOverlay')">取消</button>
+      <button class="btn-main" onclick="saveCat()" id="catSaveBtn">儲存</button>
+    </div>
+  </div>
+</div>
+
+<!-- IO Modal -->
+<div class="overlay hidden" id="ioOverlay" onclick="closeSheetOnBg(event,'ioOverlay')">
+  <div class="sheet">
+    <h3>匯入 ／ 匯出</h3>
+    <p>匯出備份後可在另一部裝置匯入還原，或作本機備份。</p>
+    <button class="io-btn export" onclick="doExport()">📤 匯出清單（分享 / 儲存）</button>
+    <button class="io-btn import" onclick="doImport()">📥 匯入清單（選擇檔案）</button>
+    <button class="io-btn cancel" onclick="hideOverlay('ioOverlay')">取消</button>
+  </div>
+</div>
+
+<!-- Settings Modal -->
+<div class="overlay hidden" id="settingsOverlay" onclick="closeSheetOnBg(event,'settingsOverlay')">
+  <div class="sheet">
+    <h3>⚙️ 設定</h3>
+    <p>Google Drive 同步及資料管理</p>
+
+    <!-- Google Drive Section -->
+    <div class="setting-section">
+      <h4>☁️ Google Drive 同步</h4>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;background:#fff;border-radius:12px;padding:12px 14px;border:1.5px solid var(--border)">
+        <span style="font-size:14px;font-weight:600;color:var(--text)">連線狀態</span>
+        <span class="drive-status ds-off" id="driveStatus">未設定</span>
+      </div>
+
+      <span class="field-label">Apps Script 網址</span>
+      <input class="field" id="driveUrl" placeholder="https://script.google.com/macros/s/.../exec" type="url" autocomplete="off">
+
+      <span class="field-label">密碼（只存於本機，不會匯出）</span>
+      <input class="field" id="drivePwd" placeholder="設定時填入的密碼" type="password" autocomplete="new-password">
+
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+        <button class="btn-test" onclick="driveTest()" id="testBtn">🔗 測試連線</button>
+        <span style="font-size:13px;color:var(--muted)" id="testResult"></span>
+      </div>
+
+      <div class="gdrive-btns" style="margin-bottom:4px">
+        <button class="gdrive-btn gdb-up" onclick="driveUpload(false)" id="btnUpload">⬆️ 上傳到 Drive</button>
+        <button class="gdrive-btn gdb-down" onclick="driveDownload()" id="btnDownload">⬇️ 從 Drive 下載</button>
+      </div>
+
+      <div class="setting-row" style="margin-top:4px">
+        <div style="flex:1">
+          <label>自動上傳</label>
+          <span>修改後約 3 秒自動上傳；離線時記住，恢復網絡後補傳</span>
+        </div>
+        <button class="toggle" id="autoToggle" onclick="toggleAuto()"></button>
+      </div>
+
+      <div id="pendingWrap" style="margin-top:10px;display:none;background:#fff8e1;border-radius:10px;padding:10px 12px;display:none">
+        <span class="pending-badge">⏳ 有離線修改待上傳</span>
+        <button style="margin-left:10px;font-size:12px;color:var(--teal);background:none;border:none;cursor:pointer;font-weight:700" onclick="driveUpload(false)">立即上傳</button>
+      </div>
+    </div>
+
+    <!-- Apps Script Guide -->
+    <div class="setting-section">
+      <h4>📋 如何設定 Google Drive 同步</h4>
+      <div style="font-size:13px;color:var(--text);line-height:2.0">
+        <span style="color:var(--teal);font-weight:700">1.</span> 開啟 <b>script.google.com</b><br>
+        <span style="color:var(--teal);font-weight:700">2.</span> 新增專案 → 貼入程式碼<br>
+        <span style="color:var(--teal);font-weight:700">3.</span> 部署 → 網頁應用程式 → 任何人可存取<br>
+        <span style="color:var(--teal);font-weight:700">4.</span> 複製網址及密碼填到上方欄位<br>
+      </div>
+      <button onclick="showScriptCode()" style="margin-top:12px;width:100%;background:#fff;border:1.5px solid var(--teal);border-radius:11px;padding:11px;font-size:13px;color:var(--teal);cursor:pointer;font-weight:700">
+        📄 查看 Apps Script 程式碼
+      </button>
+    </div>
+
+    <!-- Data Management -->
+    <div class="setting-section">
+      <h4>🗑 資料管理</h4>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:12px;padding:0">操作前請先匯出備份，以免遺失資料。</p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <button class="btn-danger" style="width:100%;padding:13px;border-radius:12px;font-size:14px" onclick="hideOverlay('settingsOverlay');confirmResetAll()">↺ 重置所有勾選狀態</button>
+        <button class="btn-danger" style="width:100%;padding:13px;border-radius:12px;font-size:14px" onclick="hideOverlay('settingsOverlay');confirmClearAll()">🗑 清除全部欄目及物品</button>
+      </div>
+    </div>
+
+    <button class="btn-cancel" style="width:100%;padding:14px;font-size:15px;border-radius:13px" onclick="hideOverlay('settingsOverlay')">關閉</button>
+  </div>
+</div>
+
+<!-- Apps Script code viewer -->
+<div class="overlay hidden" id="scriptOverlay" onclick="closeSheetOnBg(event,'scriptOverlay')">
+  <div class="sheet">
+    <h3>Apps Script 程式碼</h3>
+    <p>複製以下程式碼貼到 Google Apps Script</p>
+    <textarea id="scriptCode" readonly style="width:100%;height:220px;font-size:11px;font-family:monospace;border-radius:10px;border:1.5px solid var(--border);padding:10px;resize:none;color:var(--text);background:#f8fbfb;outline:none"></textarea>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn-main" onclick="copyScript()">複製程式碼</button>
+      <button class="btn-cancel" onclick="hideOverlay('scriptOverlay')">關閉</button>
+    </div>
+  </div>
+</div>
+
+<!-- Confirm Dialog -->
+<div class="overlay hidden center" id="confirmOverlay">
+  <div class="confirm-box">
+    <h4 id="confirmTitle">確認</h4>
+    <p id="confirmMsg"></p>
+    <div class="confirm-btns">
+      <button class="cb-cancel" id="confirmCancelBtn" onclick="confirmResolve(false)">取消</button>
+      <button class="cb-ok" id="confirmOkBtn" onclick="confirmResolve(true)">確認</button>
+    </div>
+  </div>
+</div>
+
+<!-- File input -->
+<input type="file" id="importFile" accept=".json,application/json" style="display:none" onchange="handleImport(event)">
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- ══ SCRIPT ══════════════════════════════════ -->
+<script>
+// ── CONSTANTS ──
+const EMOJIS = ['👕','🔌','🧴','📄','💊','🎒','👟','📷','🍱','🗺️','🏖️','🧳','💻','🎵','🏃','💄','🔑','🪥','🧤','☂️','🕶️','🎁','🌡️','💰','📱','🧸','🎮','📚','✏️','🎨'];
+const COLORS = ['#4B848A','#73A642','#FBC359','#e05a5a','#8b5cf6','#ec4899','#f97316','#06b6d4','#6366f1','#14b8a6','#84cc16','#e11d48'];
+
+const DEFAULT_CATS = [
+  {id:'clothes',  icon:'👕', name:'衣物',    color:'#4B848A', items:[]},
+  {id:'elec',     icon:'🔌', name:'電器',    color:'#73A642', items:[]},
+  {id:'toilet',   icon:'🧴', name:'盥洗用品',color:'#FBC359', items:[]},
+  {id:'docs',     icon:'📄', name:'證件文件',color:'#4B848A', items:[]},
+  {id:'meds',     icon:'💊', name:'藥物',    color:'#e05a5a', items:[]},
+  {id:'shoes',    icon:'👟', name:'鞋子配件',color:'#73A642', items:[]},
+  {id:'food',     icon:'🍱', name:'食物零食',color:'#FBC359', items:[]},
+  {id:'travel',   icon:'🗺️', name:'旅行用品',color:'#4B848A', items:[]},
+  {id:'beach',    icon:'🏖️', name:'海灘用品',color:'#06b6d4', items:[]},
+  {id:'kids',     icon:'🧸', name:'兒童用品',color:'#ec4899', items:[]},
+];
+
+// ── STATE ──
+let data = loadData();
+let tab = 'all';
+let expanded = {};
+let editingCatId = null;
+let selEmoji = '🎒';
+let selColor = '#4B848A';
+
+// Drive state
+let driveAutoUpload = JSON.parse(localStorage.getItem('drive_auto') || 'false');
+let pendingUpload   = JSON.parse(localStorage.getItem('drive_pending') || 'false');
+let driveKnownVer   = localStorage.getItem('drive_known_ver') || null;
+let autoTimer       = null;
+
+function loadData(){
+  try {
+    const s = localStorage.getItem('travel_v4');
+    return s ? JSON.parse(s) : JSON.parse(JSON.stringify(DEFAULT_CATS));
+  } catch { return JSON.parse(JSON.stringify(DEFAULT_CATS)); }
+}
+function saveData(triggerAutoUpload = true){
+  localStorage.setItem('travel_v4', JSON.stringify(data));
+  if(triggerAutoUpload && driveAutoUpload) scheduleAutoUpload();
+}
+
+// ── CONFIRM DIALOG ──
+let confirmResolver = null;
+function showConfirm(title, msg, okLabel='確認', danger=false){
+  return new Promise(res => {
+    confirmResolver = res;
+    document.getElementById('confirmTitle').textContent = title;
+    document.getElementById('confirmMsg').textContent   = msg;
+    const okBtn = document.getElementById('confirmOkBtn');
+    okBtn.textContent = okLabel;
+    okBtn.className = danger ? 'cb-danger' : 'cb-ok';
+    document.getElementById('confirmOverlay').classList.remove('hidden');
+  });
+}
+function confirmResolve(val){
+  document.getElementById('confirmOverlay').classList.add('hidden');
+  if(confirmResolver){ confirmResolver(val); confirmResolver=null; }
+}
+
+// ── TOAST ──
+function showToast(msg, dur=2800){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), dur);
+}
+
+// ── OVERLAY HELPERS ──
+function hideOverlay(id){ document.getElementById(id).classList.add('hidden'); }
+function closeSheetOnBg(e, id){ if(e.target===document.getElementById(id)) hideOverlay(id); }
+
+// ── RENDER ──
+function render(){
+  const total  = data.reduce((a,c)=>a+c.items.length, 0);
+  const packed = data.reduce((a,c)=>a+c.items.filter(i=>i.packed).length, 0);
+  const pct    = total ? Math.round(packed/total*100) : 0;
+
+  document.getElementById('badgeCount').textContent = packed+'/'+total;
+  document.getElementById('progLabel').textContent  = '已備妥 '+pct+'%';
+  document.getElementById('progReady').textContent  = pct===100 ? '出發！🎉' : '';
+  const bar = document.getElementById('progBar');
+  bar.style.width = pct+'%';
+  bar.style.background = pct===100 ? '#73A642' : pct>60 ? '#4B848A' : '#FBC359';
+
+  let cats = data;
+  if(tab==='packed')   cats = data.map(c=>({...c,items:c.items.filter(i=>i.packed)})).filter(c=>c.items.length);
+  if(tab==='unpacked') cats = data.map(c=>({...c,items:c.items.filter(i=>!i.packed)})).filter(c=>c.items.length);
+
+  const el = document.getElementById('content');
+  if(!cats.length){ el.innerHTML='<div class="empty">'+(tab==='packed'?'還沒有任何已帶物品 😅':'所有物品都已備妥！🎉')+'</div>'; return; }
+
+  el.innerHTML = cats.map(cat=>{
+    const real = data.find(c=>c.id===cat.id);
+    const cp = real.items.filter(i=>i.packed).length;
+    const ct = real.items.length;
+    const done = cp===ct && ct>0;
+    const open = expanded[cat.id];
+    return `
+    <div class="cat-card">
+      <button class="cat-hdr ${done?'done':''}" style="border-left-color:${cat.color}" onclick="toggleCat('${cat.id}')">
+        <span class="cat-emoji">${cat.icon}</span>
+        <div class="cat-info">
+          <div class="cat-name">${cat.name}</div>
+          <div class="cat-sub">${cp}/${ct} 已備妥</div>
+        </div>
+        <div class="cat-actions">
+          ${done?'<span class="chip-done">✓ 完成</span>':''}
+          <button class="edit-btn" onclick="event.stopPropagation();openEditCat('${cat.id}')">✏️</button>
+          <span class="chevron ${open?'open':''}">▼</span>
+        </div>
+      </button>
+      ${open?`
+      <div class="item-list">
+        ${cat.items.map(item=>`
+        <button class="item-row ${item.packed?'checked':''}" onclick="toggleItem('${cat.id}',${item.id})">
+          <div class="chkbox ${item.packed?'checked':''}">${item.packed?'<span class="chktick">✓</span>':''}</div>
+          <span class="item-name ${item.packed?'checked':''}">${item.name}</span>
+          ${item.packed?'<span class="dot-green"></span>':''}
+          <button class="del-item-btn" onclick="event.stopPropagation();delItem('${cat.id}',${item.id})">✕</button>
+        </button>`).join('')}
+        <div class="add-item-row">
+          <input class="add-item-input" id="ni_${cat.id}" placeholder="新增物品…" maxlength="40"
+            onkeydown="if(event.key==='Enter')addItem('${cat.id}')">
+          <button class="btn-add-item" onclick="addItem('${cat.id}')">新增</button>
+          <button class="btn-del-cat" onclick="askDeleteCat('${cat.id}')" title="刪除欄目">🗑</button>
+        </div>
+      </div>` : ''}
+    </div>`;
+  }).join('');
+
+  updateDrivePendingUI();
+}
+
+// ── ACTIONS ──
+function toggleCat(id){ expanded[id]=!expanded[id]; render(); }
+
+function toggleItem(catId, itemId){
+  data.find(c=>c.id===catId).items.find(i=>i.id===itemId).packed ^= true;
+  saveData(); render();
+}
+
+function addItem(catId){
+  const inp = document.getElementById('ni_'+catId);
+  const name = inp.value.trim();
+  if(!name) return;
+  const cat = data.find(c=>c.id===catId);
+  cat.items.push({id: Date.now(), name, packed:false});
+  saveData(); expanded[catId]=true; render();
+}
+
+async function delItem(catId, itemId){
+  const ok = await showConfirm('刪除物品','確定要刪除這個物品？','刪除',true);
+  if(!ok) return;
+  data.find(c=>c.id===catId).items = data.find(c=>c.id===catId).items.filter(i=>i.id!==itemId);
+  saveData(); expanded[catId]=true; render();
+}
+
+async function askDeleteCat(id){
+  const cat = data.find(c=>c.id===id);
+  const ok = await showConfirm('刪除欄目',`確定要刪除「${cat.name}」及其所有物品？`, '刪除', true);
+  if(!ok) return;
+  data = data.filter(c=>c.id!==id);
+  delete expanded[id];
+  saveData(); render();
+}
+
+async function confirmResetAll(){
+  const ok = await showConfirm('重置勾選','所有物品將標記為未帶，欄目和物品不會刪除。','重置');
+  if(!ok) return;
+  data.forEach(c=>c.items.forEach(i=>i.packed=false));
+  saveData(); render(); showToast('✅ 已重置所有勾選');
+}
+
+async function confirmClearAll(){
+  const ok = await showConfirm('清除全部資料','所有欄目和物品將永久刪除！此操作不可還原。','清除',true);
+  if(!ok) return;
+  data = JSON.parse(JSON.stringify(DEFAULT_CATS));
+  expanded = {};
+  saveData(); hideOverlay('settingsOverlay'); render(); showToast('🗑 已清除所有資料');
+}
+
+function setTab(t, btn){
+  tab = t;
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+// ── CAT MODAL ──
+function buildEmojiGrid(){
+  document.getElementById('emojiGrid').innerHTML = EMOJIS.map(e=>
+    `<button class="emj-btn ${e===selEmoji?'sel':''}" onclick="pickEmoji('${e}')">${e}</button>`
+  ).join('');
+}
+function buildColorGrid(){
+  document.getElementById('colorGrid').innerHTML = COLORS.map(c=>
+    `<button class="col-btn ${c===selColor?'sel':''}" style="background:${c}" onclick="pickColor('${c}')"></button>`
+  ).join('');
+}
+function pickEmoji(e){ selEmoji=e; buildEmojiGrid(); }
+function pickColor(c){ selColor=c; buildColorGrid(); }
+
+function openAddCat(){
+  editingCatId=null; selEmoji='🎒'; selColor='#4B848A';
+  document.getElementById('catNameInput').value='';
+  document.getElementById('catModalTitle').textContent='新增欄目';
+  document.getElementById('catSaveBtn').textContent='新增';
+  buildEmojiGrid(); buildColorGrid();
+  document.getElementById('catOverlay').classList.remove('hidden');
+  setTimeout(()=>document.getElementById('catNameInput').focus(), 300);
+}
+
+function openEditCat(id){
+  const cat = data.find(c=>c.id===id);
+  editingCatId=id; selEmoji=cat.icon; selColor=cat.color;
+  document.getElementById('catNameInput').value=cat.name;
+  document.getElementById('catModalTitle').textContent='編輯欄目';
+  document.getElementById('catSaveBtn').textContent='更新';
+  buildEmojiGrid(); buildColorGrid();
+  document.getElementById('catOverlay').classList.remove('hidden');
+}
+
+function saveCat(){
+  const name = document.getElementById('catNameInput').value.trim();
+  if(!name){ showToast('⚠️ 請輸入欄目名稱'); return; }
+  if(editingCatId){
+    const cat = data.find(c=>c.id===editingCatId);
+    cat.name=name; cat.icon=selEmoji; cat.color=selColor;
+  } else {
+    const id = 'cat_'+Date.now();
+    data.push({id, icon:selEmoji, name, color:selColor, items:[]});
+    expanded[id]=true;
+  }
+  saveData(); hideOverlay('catOverlay'); render();
+}
+
+// ── IMPORT / EXPORT ──
+function openIO(){ document.getElementById('ioOverlay').classList.remove('hidden'); }
+
+async function doExport(){
+  hideOverlay('ioOverlay');
+  const obj = { version:2, exportedAt:new Date().toISOString(), appName:'旅行清單', data };
+  const json = JSON.stringify(obj, null, 2);
+  const blob = new Blob([json], {type:'application/json'});
+  const fname = '旅行清單_'+new Date().toISOString().slice(0,10)+'.json';
+
+  if(navigator.share && navigator.canShare?.({files:[new File([blob],fname,{type:'application/json'})]})){
+    try {
+      await navigator.share({files:[new File([blob],fname,{type:'application/json'})], title:'旅行清單備份'});
+      showToast('✅ 已分享成功'); return;
+    } catch(e){ if(e.name==='AbortError') return; }
+  }
+  if(window.showSaveFilePicker){
+    try {
+      const fh = await window.showSaveFilePicker({suggestedName:fname, types:[{description:'JSON',accept:{'application/json':['.json']}}]});
+      const w = await fh.createWritable(); await w.write(blob); await w.close();
+      showToast('✅ 已儲存檔案'); return;
+    } catch(e){ if(e.name==='AbortError') return; }
+  }
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href=url; a.download=fname;
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(url); a.remove(); }, 1000);
+  showToast('✅ 已下載備份');
+}
+
+function doImport(){ hideOverlay('ioOverlay'); document.getElementById('importFile').value=''; document.getElementById('importFile').click(); }
+
+async function handleImport(e){
+  const file = e.target.files[0]; if(!file) return;
+  const text = await file.text();
+  try {
+    const obj = JSON.parse(text);
+    const imported = Array.isArray(obj) ? obj : obj.data;
+    if(!Array.isArray(imported)||!imported.every(c=>c.id&&c.name&&Array.isArray(c.items))) throw new Error('格式錯誤');
+    const date = obj.exportedAt ? '\n備份時間：'+obj.exportedAt.slice(0,10) : '';
+    const ok = await showConfirm('確認匯入','現有清單將被覆蓋。'+date,'匯入');
+    if(!ok) return;
+    data=imported; expanded={}; if(data.length) expanded[data[0].id]=true;
+    saveData(); render(); showToast('✅ 匯入成功！共 '+data.length+' 個欄目');
+  } catch(err){ showToast('❌ 匯入失敗：'+err.message, 3500); }
+}
+
+// ── SETTINGS ──
+function openSettings(){
+  document.getElementById('driveUrl').value = localStorage.getItem('drive_url')||'';
+  document.getElementById('drivePwd').value = localStorage.getItem('drive_pwd')||'';
+  updateAutoToggleUI();
+  updateDriveStatusUI('off');
+  document.getElementById('settingsOverlay').classList.remove('hidden');
+}
+
+// ── GOOGLE DRIVE SYNC ──
+function getDriveCfg(){
+  return {
+    url: document.getElementById('driveUrl')?.value.trim() || localStorage.getItem('drive_url')||'',
+    pwd: document.getElementById('drivePwd')?.value || localStorage.getItem('drive_pwd')||''
+  };
+}
+function saveDriveCfg(){
+  const {url,pwd} = getDriveCfg();
+  localStorage.setItem('drive_url', url);
+  localStorage.setItem('drive_pwd', pwd);
+}
+
+function updateDriveStatusUI(state, msg=''){
+  const el = document.getElementById('driveStatus'); if(!el) return;
+  const map = {ok:['ds-ok','✅ 已連線'],err:['ds-err','❌ 連線失敗'],warn:['ds-warn','⚠️ '+msg],pending:['ds-warn','⏳ 上傳中…'],off:['ds-off','未設定']};
+  const [cls,label] = map[state]||map.off;
+  el.className='drive-status '+cls;
+  el.textContent = msg&&state==='warn' ? '⚠️ '+msg : label;
+}
+
+function updateAutoToggleUI(){
+  const btn = document.getElementById('autoToggle'); if(!btn) return;
+  btn.className='toggle '+(driveAutoUpload?'on':'off');
+}
+
+function toggleAuto(){
+  driveAutoUpload = !driveAutoUpload;
+  localStorage.setItem('drive_auto', JSON.stringify(driveAutoUpload));
+  updateAutoToggleUI();
+  if(driveAutoUpload && pendingUpload) scheduleAutoUpload();
+  showToast(driveAutoUpload ? '✅ 自動上傳已開啟' : '⏹ 自動上傳已關閉');
+}
+
+function updateDrivePendingUI(){
+  const el = document.getElementById('pendingWrap'); if(!el) return;
+  el.style.display = pendingUpload ? 'block' : 'none';
+}
+
+async function driveTest(){
+  saveDriveCfg();
+  const {url,pwd} = getDriveCfg();
+  if(!url){ showToast('⚠️ 請先填入 Apps Script 網址'); return; }
+  document.getElementById('testResult').textContent='測試中…';
+  try {
+    const r = await driveRequest({action:'ping', pwd});
+    if(r.ok){ updateDriveStatusUI('ok'); document.getElementById('testResult').textContent='✅ 成功'; }
+    else { updateDriveStatusUI('err'); document.getElementById('testResult').textContent='❌ '+r.error; }
+  } catch(e){ updateDriveStatusUI('err'); document.getElementById('testResult').textContent='❌ 網絡錯誤'; }
+}
+
+async function driveUpload(auto=false){
+  saveDriveCfg();
+  const {url,pwd} = getDriveCfg();
+  if(!url){ if(!auto) showToast('⚠️ 請先填入 Apps Script 網址'); return; }
+  if(!navigator.onLine){ setPending(true); if(!auto) showToast('📵 離線，將在恢復網絡後自動上傳'); return; }
+
+  updateDriveStatusUI('pending');
+  try {
+    // Check remote version first
+    const meta = await driveRequest({action:'getMeta', pwd});
+    if(meta.ok && meta.version && meta.version !== driveKnownVer && driveKnownVer !== null){
+      // Remote is newer than what we last synced
+      const ok = await showConfirm(
+        '雲端資料較新',
+        '雲端版本比此裝置上次同步的版本新（可能來自另一部裝置）。\n\n繼續上傳會覆蓋雲端資料，是否繼續？',
+        '覆蓋上傳', true
+      );
+      if(!ok){ updateDriveStatusUI('warn','需處理'); return; }
+    }
+
+    const payload = { version:2, exportedAt:new Date().toISOString(), data };
+    const r = await driveRequest({action:'upload', pwd, payload: JSON.stringify(payload)});
+    if(r.ok){
+      driveKnownVer = r.newVersion || meta.version || Date.now()+'';
+      localStorage.setItem('drive_known_ver', driveKnownVer);
+      setPending(false); updateDriveStatusUI('ok');
+      if(!auto) showToast('✅ 已上傳到 Google Drive');
+    } else { updateDriveStatusUI('err'); if(!auto) showToast('❌ 上傳失敗：'+r.error); }
+  } catch(e){ updateDriveStatusUI('err'); setPending(true); if(!auto) showToast('❌ 上傳失敗，將稍後重試'); }
+}
+
+async function driveDownload(){
+  saveDriveCfg();
+  const {url,pwd} = getDriveCfg();
+  if(!url){ showToast('⚠️ 請先填入 Apps Script 網址'); return; }
+  if(!navigator.onLine){ showToast('📵 離線，無法下載'); return; }
+
+  updateDriveStatusUI('pending');
+  try {
+    const r = await driveRequest({action:'download', pwd});
+    if(!r.ok){ updateDriveStatusUI('err'); showToast('❌ 下載失敗：'+r.error); return; }
+
+    const remote = typeof r.data === 'string' ? JSON.parse(r.data) : r.data;
+    const imported = Array.isArray(remote) ? remote : remote.data;
+    if(!Array.isArray(imported)) throw new Error('格式錯誤');
+
+    const date = remote.exportedAt ? '\n上傳時間：'+remote.exportedAt.slice(0,10) : '';
+    const ok = await showConfirm('確認下載','雲端資料將覆蓋此裝置的清單。'+date,'下載覆蓋', true);
+    if(!ok){ updateDriveStatusUI('ok'); return; }
+
+    data = imported; expanded={}; if(data.length) expanded[data[0].id]=true;
+    driveKnownVer = r.version || Date.now()+'';
+    localStorage.setItem('drive_known_ver', driveKnownVer);
+    saveData(false); render(); updateDriveStatusUI('ok');
+    showToast('✅ 已從 Drive 下載並套用');
+  } catch(e){ updateDriveStatusUI('err'); showToast('❌ 下載失敗：'+e.message); }
+}
+
+async function driveRequest({action, pwd, payload}){
+  const {url} = getDriveCfg();
+  if(!url) throw new Error('未填網址');
+
+  // Apps Script CORS limitation:
+  // POST with Content-Type:application/json triggers a preflight that Apps Script rejects.
+  // Solution: use GET with query params for small requests (ping/getMeta/download),
+  // and for upload (large payload) use POST with text/plain which skips preflight.
+  if(action === 'upload'){
+    // text/plain avoids CORS preflight; Apps Script receives it via e.postData.contents
+    const body = JSON.stringify({action, pwd, payload});
+    const r = await fetch(url, {
+      method:'POST',
+      body,
+      // No Content-Type header → defaults to text/plain → no preflight
+    });
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const text = await r.text();
+    return JSON.parse(text);
+  } else {
+    // GET request — no CORS preflight at all
+    const params = new URLSearchParams({action, pwd});
+    const r = await fetch(`${url}?${params}`, {method:'GET'});
+    if(!r.ok) throw new Error('HTTP '+r.status);
+    const text = await r.text();
+    return JSON.parse(text);
+  }
+}
+
+function setPending(val){
+  pendingUpload = val;
+  localStorage.setItem('drive_pending', JSON.stringify(val));
+  updateDrivePendingUI();
+}
+
+function scheduleAutoUpload(){
+  if(!driveAutoUpload) return;
+  clearTimeout(autoTimer);
+  autoTimer = setTimeout(()=> driveUpload(true), 3000);
+}
+
+// Retry pending upload when back online
+window.addEventListener('online', ()=>{
+  if(pendingUpload && driveAutoUpload) driveUpload(true);
+});
+
+// ── APPS SCRIPT CODE ──
+const APPS_SCRIPT = `// ═══════════════════════════════════════════════
+// 旅行清單 — Google Apps Script 同步伺服器
+// 部署方式：部署 → 網頁應用程式
+//   · 執行身份：「我」
+//   · 存取權限：「所有人」（必須，否則手機無法連線）
+// ═══════════════════════════════════════════════
+
+const FOLDER_NAME = '旅行清單備份';
+const DATA_FILE   = 'ledger.json';
+const BACKUP_FILE = 'ledger.backup.json';
+const PASSWORD    = 'YOUR_PASSWORD_HERE'; // ← 改成你的密碼
+
+// ── GET：處理 ping / getMeta / download ──────────
+function doGet(e) {
+  try {
+    const p      = e.parameter;
+    const action = p.action || '';
+    const pwd    = p.pwd   || '';
+
+    if (pwd !== PASSWORD) return json({ ok: false, error: '密碼錯誤' });
+
+    const folder = getFolder();
+
+    if (action === 'ping')     return json({ ok: true });
+    if (action === 'getMeta')  return json({ ok: true, version: getMeta(folder) });
+    if (action === 'download') return doDownload(folder);
+
+    return json({ ok: false, error: '未知操作: ' + action });
+  } catch (err) {
+    return json({ ok: false, error: err.message });
+  }
+}
+
+// ── POST：處理 upload（payload 太大不適合放 URL）──
+function doPost(e) {
+  try {
+    const req = JSON.parse(e.postData.contents);
+    if (req.pwd !== PASSWORD) return json({ ok: false, error: '密碼錯誤' });
+
+    const folder = getFolder();
+
+    if (req.action === 'upload') return doUpload(folder, req.payload);
+
+    return json({ ok: false, error: '未知操作: ' + req.action });
+  } catch (err) {
+    return json({ ok: false, error: err.message });
+  }
+}
+
+// ── 工具函數 ─────────────────────────────────────
+function getFolder() {
+  const it = DriveApp.getFoldersByName(FOLDER_NAME);
+  return it.hasNext() ? it.next() : DriveApp.createFolder(FOLDER_NAME);
+}
+
+function getMeta(folder) {
+  const it = folder.getFilesByName(DATA_FILE);
+  if (!it.hasNext()) return null;
+  return it.next().getLastUpdated().toISOString();
+}
+
+function doUpload(folder, payload) {
+  // 備份舊版本
+  const existing = folder.getFilesByName(DATA_FILE);
+  if (existing.hasNext()) {
+    const old     = existing.next();
+    const backups = folder.getFilesByName(BACKUP_FILE);
+    if (backups.hasNext()) backups.next().setTrashed(true);
+    old.makeCopy(BACKUP_FILE, folder);
+    old.setTrashed(true);
+  }
+  folder.createFile(DATA_FILE, payload, 'application/json');
+  return json({ ok: true, newVersion: new Date().toISOString() });
+}
+
+function doDownload(folder) {
+  const it = folder.getFilesByName(DATA_FILE);
+  if (!it.hasNext()) return json({ ok: false, error: '雲端尚未有資料，請先上傳一次' });
+  const f = it.next();
+  return json({
+    ok:      true,
+    data:    f.getBlob().getDataAsString(),
+    version: f.getLastUpdated().toISOString()
+  });
+}
+
+function json(obj) {
+  return ContentService
+    .createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}`;
+
+function showScriptCode(){
+  document.getElementById('scriptCode').value = APPS_SCRIPT;
+  document.getElementById('scriptOverlay').classList.remove('hidden');
+}
+function copyScript(){
+  navigator.clipboard.writeText(APPS_SCRIPT).then(()=>showToast('✅ 已複製程式碼')).catch(()=>showToast('❌ 複製失敗，請手動選取'));
+}
+
+// ── INSTALL BANNER ──
+let deferredPrompt = null;
+const ua = navigator.userAgent.toLowerCase();
+const isIOS = /iphone|ipad|ipod/.test(ua);
+const isAndroid = /android/.test(ua);
+const isStandalone = window.navigator.standalone || window.matchMedia('(display-mode:standalone)').matches;
+
+if(!isStandalone){
+  if(isAndroid){
+    window.addEventListener('beforeinstallprompt', e=>{
+      e.preventDefault(); deferredPrompt=e;
+      document.getElementById('ibText').innerHTML='<strong>安裝到主畫面</strong><span>點按鈕即可加入桌面</span>';
+      const btn=document.getElementById('ibBtn'); btn.classList.remove('hidden');
+      btn.onclick=async()=>{ if(!deferredPrompt) return; deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt=null; document.getElementById('installBanner').classList.add('hidden'); };
+      document.getElementById('installBanner').classList.remove('hidden');
+    });
+    setTimeout(()=>{ if(!deferredPrompt){ document.getElementById('ibText').innerHTML='<strong>安裝到主畫面</strong><span>點右上角 ⋮ →「新增至主畫面」</span>'; document.getElementById('installBanner').classList.remove('hidden'); } }, 4000);
+  } else if(isIOS){
+    setTimeout(()=>{ document.getElementById('ibText').innerHTML='<strong>安裝到 iPhone 桌面</strong><span>點下方分享 □↑ →「加入主畫面」</span>'; document.getElementById('installBanner').classList.remove('hidden'); }, 3000);
+  }
+}
+
+// ── SERVICE WORKER ──
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+
+// ── INIT ──
+if(data.length) expanded[data[0].id]=true;
+render();
+</script>
+</body>
+</html>
